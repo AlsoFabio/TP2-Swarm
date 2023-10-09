@@ -17,8 +17,6 @@ services:
         replicas: 3
       depends_on:
         - mysql
-      volumes:
-        - ./node-datos:/servidor
       ports:
         - "8090:8080"
         
@@ -32,7 +30,3 @@ services:
       - ./apache-datos:/var/www/html
     ports:
       - "8080:80"
-
-  
-
-  
